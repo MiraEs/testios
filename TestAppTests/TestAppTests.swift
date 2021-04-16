@@ -24,5 +24,15 @@ class TestAppTests: XCTestCase {
         let success = true
         XCTAssertTrue(success)
     }
+    
+    func test_assetNil() {
+        let optionalValue: Int? = 23
+        XCTAssertNil(optionalValue)
+    }
+    
+    func test_assertEqual() {
+        let actual = "actual"
+        XCTAssertEqual(actual, "expected")
+    }
 
 }
